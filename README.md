@@ -1,4 +1,4 @@
-# React-HitMan v1.0.0
+# React-HitMan
 
 ![Logo](https://github.com/Shikhar2525/HitMan/blob/main/logo-no-background.png?raw=true)
 
