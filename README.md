@@ -71,12 +71,31 @@ Install api-hitman with npm
 ## Usage/Examples
 
 ```javascript
-import { useFetch, useMutation } from "react-hitman";
+import { useFetch } from "react-hitman-api";
 
-function App() {
-  return <Component />;
+export default function App() {
+  const { data } = useFetch(
+    {
+      baseUrl: "https://jsonplaceholder.typicode.com",
+      path: "/comments",
+      params: { postId: 1 },
+    },
+    {
+      skip: false,
+    }
+  );
+
+  return (
+    <main>
+      {data?.map((item: any) => {
+        return <h6>{JSON.stringify(item)}</h6>;
+      })}
+    </main>
+  );
 }
 ```
+
+- Try it now: [@replit](https://replit.com/@ShikharMandloi/HitMan-Usage-Example#src/App.tsx)
 
 ## FAQ
 
