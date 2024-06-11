@@ -9,6 +9,10 @@ export type CustomApiUtil = {
   skip: boolean;
 };
 
+export type MutationAdditionalUtils = {
+  METHOD: "PATCH" | "POST" | "PUT";
+};
+
 export const createUrl = (
   baseUrl: string,
   path: string,

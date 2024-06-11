@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
-import { CustomApiArgs, createUrl } from "./customHooksType";
+import {
+  CustomApiArgs,
+  MutationAdditionalUtils,
+  createUrl,
+} from "./customHooksType";
 
 const useMutation = () => {
   const [data, setData] = useState();
@@ -10,14 +14,14 @@ const useMutation = () => {
 
   const updateMutation = async (
     args: CustomApiArgs,
-    apiMethod: string = "PATCH"
+    mutationUtils?: MutationAdditionalUtils
   ) => {
     const { baseUrl, path, params, initialData } = args;
     setIsLoading(true);
     setError(null);
     try {
       const response = await fetch(createUrl(baseUrl, path, params), {
-        method: apiMethod,
+        method: mutationUtils?.METHOD || "PATCH",
         credentials: "include",
         headers: {
           "Content-type": "application/json",

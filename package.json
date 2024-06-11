@@ -1,6 +1,6 @@
 {
   "name": "api-hitman",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,12 +9,38 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/my-custom-hooks.git"
+    "url": "https://github.com/Shikhar2525/HitMan"
+  },
+  "homepage": "https://github.com/Shikhar2525/HitMan#readme",
+  "bugs": {
+    "url": "https://github.com/Shikhar2525/HitMan/issues"
   },
   "keywords": [
+    "api",
+    "http",
+    "request",
+    "rest",
+    "api-client",
+    "fetch",
+    "axios",
+    "http-client",
+    "ajax",
+    "web-api",
+    "api-calling",
+    "api-requests",
+    "rest-client",
+    "web-services",
+    "api-integration",
+    "api-wrapper",
+    "json",
+    "api-tool",
+    "network",
+    "http-request",
+    "http-call",
     "react",
-    "hooks",
-    "typescript"
+    "typescript",
+    "javascript",
+    "postman"
   ],
   "author": "Shikhar Mandloi",
   "license": "MIT",
